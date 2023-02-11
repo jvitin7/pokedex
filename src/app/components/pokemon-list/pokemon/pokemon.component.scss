@@ -1,0 +1,56 @@
+@import '../../../../assets/scss/variables.scss';
+
+.pokemon {
+    height: 60px;
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: medium;
+
+    .number {
+        width: 120px;
+        height: 48px; 
+        border-radius: 40px;
+        background-color: $secundary-font-color;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        width: 80px;
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .name {
+        width: 272px;
+        height: 100%; 
+
+        display: flex;
+        align-items: center;
+    }
+
+    .types {
+        display: flex;
+
+        div {
+            height: 48px;
+            width: 48px;
+            background-color: $primary-font-color;
+            border-radius: 50%;
+        }
+        
+        div:last-child {
+            margin-left: 32px;
+        }
+    }
+}

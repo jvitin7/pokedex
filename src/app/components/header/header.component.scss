@@ -1,0 +1,32 @@
+@import '../../../assets/scss/variables.scss';
+
+header {
+    background-color: $primary-color;
+    height: 100px;
+    margin-bottom: 60px;
+    
+    display: flex;
+    align-items: center;
+
+    h1 {
+        margin-left: 40px;
+        font-size: 32px;
+        color: $secundary-font-color;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-icons {
+        display: flex;
+
+        div {
+            background-color: $secundary-font-color;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            margin-left: 32px;
+        }
+    }
+}
