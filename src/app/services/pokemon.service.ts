@@ -19,4 +19,5 @@ export class PokemonService {
     this.pokemons = result.results;
     
   }
+
 }

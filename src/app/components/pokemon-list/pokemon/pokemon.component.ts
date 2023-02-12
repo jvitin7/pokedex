@@ -7,13 +7,21 @@ import { Input } from '@angular/core';
   styleUrls: ['./pokemon.component.scss']
 })
 export class PokemonComponent {
-  @Input() pokemons = [];
+  @Input() pokemonName: string = '';
   @Input() pokemonNumber: number = 0;
+  
 
-  getPokemonNumberCard() {
+  getPokemonImageCard() {
     const number = this.pokemonNumber;
     let formatedNumber = number.toString().padStart(3, '0');
 
-    return `../../../assets/images/pokemon-card/${formatedNumber}.webp`;
+    return `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${formatedNumber}.png`;
+  }
+
+  getPokemonNumber() {
+    const number = this.pokemonNumber;
+    let formatedNumber = number.toString().padStart(3, '0');
+
+    return `#${formatedNumber}`;
   }
 }

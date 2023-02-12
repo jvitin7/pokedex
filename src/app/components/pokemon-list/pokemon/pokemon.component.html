@@ -1,9 +1,9 @@
 <div class="pokemon">
-    <div class="number">#{{ pokemons }}</div>
+    <div class="number">{{ getPokemonNumber() }}</div>
     <div class="image">
-        <img [src]="getPokemonNumberCard()">
+        <img [src]="getPokemonImageCard()">
     </div>
-    <div class="name"></div>
+    <div class="name">{{ pokemonName | titlecase }}</div>
     <div class="types">
         <div></div>
         <div></div>

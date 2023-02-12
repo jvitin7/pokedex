@@ -9,6 +9,9 @@ import { PokemonCategoriesComponent } from './components/pokemon-categories/poke
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 import { PokemonComponent } from './components/pokemon-list/pokemon/pokemon.component';
 import { PokemonService } from './services/pokemon.service';
+import { TypeFiltersComponent } from './components/pokemon-categories/type-filters/type-filters.component';
+import { PokemonFiltersComponent } from './components/pokemon-categories/pokemon-filters/pokemon-filters.component';
+import { PokemonSearchComponent } from './components/pokemon-categories/pokemon-search/pokemon-search.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { PokemonService } from './services/pokemon.service';
     HeaderComponent,
     PokemonCategoriesComponent,
     PokemonListComponent,
-    PokemonComponent
+    PokemonComponent,
+    PokemonSearchComponent,
+    TypeFiltersComponent,
+    PokemonFiltersComponent
   ],
   imports: [
     BrowserModule,

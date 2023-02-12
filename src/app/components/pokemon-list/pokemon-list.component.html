@@ -1,4 +1,5 @@
 <main>
     <app-pokemon *ngFor="let pokemon of pokemonService.pokemons; index as i"
+    pokemonName="{{ pokemon['name'] }}"
     [pokemonNumber]="i + 1"></app-pokemon>
 </main>

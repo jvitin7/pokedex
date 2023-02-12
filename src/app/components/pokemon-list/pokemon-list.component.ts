@@ -8,5 +8,7 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 })
 export class PokemonListComponent {
 
-  constructor(public pokemonService: PokemonService) { }
+  constructor(public pokemonService: PokemonService) { 
+
+  }
 }
